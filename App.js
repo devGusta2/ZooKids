@@ -1,3 +1,5 @@
+//programador Gustavo Rodrigues
+
 //dependencias
 import {NavigationContainer} from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
@@ -13,7 +15,7 @@ export default function navigator(){
         
         <NavigationContainer>
            
-            <Nav.Navigator initialRouteName='splash'>
+            <Nav.Navigator initialRouteName='login'>
                 <Nav.Screen name='splash' component={splash} options={{headerShown:false}}/>
                 <Nav.Screen name='login' component={login} options={{headerShown:false}}/>
             </Nav.Navigator>

@@ -12,7 +12,7 @@ export default function splash(props){
         const {navigation} = props;
         navigation.navigate('login');
         console.log("2 segundos");
-    },5000)
+    },1000)
     return(
         
         <View style={styles.container}>
