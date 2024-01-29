@@ -1,7 +1,13 @@
 import {Text, View, Image, TextInput, TouchableOpacity} from 'react-native';
-
 import styles from './styles';
-export default function splash(){
+
+function navega(){
+    
+}
+
+
+export default function splash(props){
+    const {navigation} = props;
     return(
         <View style={styles.container}>
             {/*Image tucan and greetins*/}
@@ -26,7 +32,9 @@ export default function splash(){
                         <Text style={styles.textButton}>Entrar</Text>
                     </TouchableOpacity>
                     <Text>Ou</Text>
-                    <TouchableOpacity style={styles.button1}>
+                    <TouchableOpacity style={styles.button1}
+                    onPress={()=>navigation.navigate('signup')}
+                    >
                         <Text style={styles.textButton1}>Cadastrar</Text>
                     </TouchableOpacity>
                 </View>
